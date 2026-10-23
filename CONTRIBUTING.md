@@ -10,6 +10,11 @@ Please include:
 3. Font size, column height, raster mode, and expected vs actual result.
 4. OS, Rust version, and a screenshot if it helps illustrate the issue.
 
+Do not commit any font other than the existing, pinned OFL Noto test fixture.
+Font files are ignored by default, and CI checks tracked font content and the
+fixture/license checksums. Run `python tools/check_font_policy.py` after staging
+changes to check the Git index (the content that would actually be committed).
+
 Do not attach confidential game scripts/assets, evaluation-font screenshots
 that cannot be shared publicly, access cookies, service keys, or private paths.
 

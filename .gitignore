@@ -2,3 +2,22 @@
 /output/
 *.tmp
 .DS_Store
+
+# Never commit fonts except the explicitly reviewed, unmodified OFL fixture.
+*.[tT][tT][fF]
+*.[oO][tT][fF]
+*.[tT][tT][cC]
+*.[oO][tT][cC]
+*.[wW][oO][fF][fF]
+*.[wW][oO][fF][fF]2
+*.[eE][oO][tT]
+*.[fF][oO][nN]
+*.[fF][nN][tT]
+*.[pP][fF][aA]
+*.[pP][fF][bB]
+*.[bB][dD][fF]
+*.[pP][cC][fF]
+*.[sS][fF][dD]
+*.[dD][fF][oO][nN][tT]
+*.[uU][fF][oO]/
+!/tests/fonts/NotoSansMongolian-Regular.ttf
