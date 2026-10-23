@@ -1,0 +1,23 @@
+[package]
+name = "mongol-unicode-renderer"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "Unicode Mongolian shaping, vertical word wrapping, and seamless CPU rasterization"
+license = "MIT"
+repository = "https://github.com/romchina/mongol-unicode-renderer"
+readme = "README.md"
+keywords = ["mongolian", "unicode", "shaping", "vertical", "rendering"]
+categories = ["graphics", "text-processing"]
+
+[dependencies]
+harfrust = "0.4.1"
+ttf-parser = "0.25"
+tiny-skia = { version = "0.11.4", default-features = false, features = ["std", "simd"] }
+
+[dev-dependencies]
+png = "0.17"
+
+[[example]]
+name = "render"
+path = "examples/render.rs"
